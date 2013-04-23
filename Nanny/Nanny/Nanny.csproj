@@ -83,7 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="prueba\" />
     <Folder Include="Logic\" />
     <Folder Include="Logic\DOM\" />
     <Folder Include="UI\" />
@@ -102,7 +101,6 @@
     <Compile Include="FlipsideViewController.designer.cs">
       <DependentUpon>FlipsideViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="prueba\pruebaBLA.cs" />
     <Compile Include="Logic\AccountLogic.cs" />
     <Compile Include="Logic\NannyLogic.cs" />
     <Compile Include="Logic\NotificationLogic.cs" />
