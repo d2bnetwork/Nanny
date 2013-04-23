@@ -136,3 +136,4 @@ obj
 *.exe
 
 *.nib
+Nanny/Nanny/bin/iPhoneSimulator/Debug/Nanny.exe.mdb
