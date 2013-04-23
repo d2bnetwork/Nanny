@@ -136,12 +136,5 @@ obj
 *.exe
 *.nib
 
-Nanny/Nanny/bin/iPhoneSimulator/Debug/Nanny.exe.mdb
+~Nanny.exe
 
-Nanny/Nanny/bin/iPhoneSimulator/Debug/Nanny.app/FlipsideViewController.nib
-
-Nanny/Nanny/bin/iPhoneSimulator/Debug/Nanny.app/MainViewController.nib
-
-Nanny/Nanny/bin/iPhoneSimulator/Debug/Nanny.exe
-
-Nanny/Nanny/bin/iPhoneSimulator/Debug/Nanny.exe.mdb
