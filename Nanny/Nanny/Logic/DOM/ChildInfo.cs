@@ -1,10 +1,11 @@
 using System;
+using System.Collections.Generic;
 
 namespace Nanny.DOM
 {
 	public class ChildInfo
 	{
-		enum E_Gender
+		public enum E_Gender
 		{
 			Boy =0,
 			Girl =1

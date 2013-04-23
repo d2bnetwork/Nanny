@@ -8,8 +8,8 @@ namespace Nanny.Logic
 		private static DataLogic _Instance;
 		private DataLogic ()
 		{
-			ParseClient.Initialize("ic5msCXZIpGFNDWDerRFFEPIZNPshuj9atDxEDXC",
-			                       "iiLmBAPfDYb25nfNahVzwDpWNc7eEmttmmccuVNh");
+			//ParseClient.Initialize("ic5msCXZIpGFNDWDerRFFEPIZNPshuj9atDxEDXC",
+			  //                     "iiLmBAPfDYb25nfNahVzwDpWNc7eEmttmmccuVNh");
 		}
 		
 		public static DataLogic Instance 
