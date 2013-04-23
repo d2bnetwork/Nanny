@@ -9,7 +9,7 @@ namespace Nanny.Logic
 		{
 		}
 		
-		public AccountLogic Instance 
+		public static AccountLogic Instance 
 		{
 			get
 			{

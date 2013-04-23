@@ -1,4 +1,5 @@
 using System;
+using Parse;
 
 namespace Nanny.Logic
 {
@@ -7,6 +8,8 @@ namespace Nanny.Logic
 		private static DataLogic _Instance;
 		private DataLogic ()
 		{
+			ParseClient.Initialize("ic5msCXZIpGFNDWDerRFFEPIZNPshuj9atDxEDXC",
+			                       "iiLmBAPfDYb25nfNahVzwDpWNc7eEmttmmccuVNh");
 		}
 		
 		public static DataLogic Instance 
@@ -20,7 +23,11 @@ namespace Nanny.Logic
 		}
 
 
-		private void SaveObject<T>(object obj){
+		public void SaveObject<T>(object obj){
+			var testObject = new ParseObject ("TestObject");
+			testObject ["foo"] = "bar";
+			await testObject.SaveAsync ();
+
 			foreach (var prop in obj.GetType().GetProperties()) {
 
 			}
