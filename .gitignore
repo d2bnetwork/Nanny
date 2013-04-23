@@ -21,6 +21,8 @@
 *.swp
 *.lock
 profile
+debug
+
  
  
 ####
@@ -130,12 +132,10 @@ xcuserdata
 
 bin
 obj
-
 *.nib
-
 *.exe
-
 *.nib
+
 Nanny/Nanny/bin/iPhoneSimulator/Debug/Nanny.exe.mdb
 
 Nanny/Nanny/bin/iPhoneSimulator/Debug/Nanny.app/FlipsideViewController.nib
