@@ -1,15 +1,15 @@
 using System;
 
-namespace Nanny
+namespace Nanny.Logic
 {
 	public class DataLogic
 	{
 		private static DataLogic _Instance;
-		private  DataLogic ()
+		private DataLogic ()
 		{
 		}
 		
-		public DataLogic Instance 
+		public static DataLogic Instance 
 		{
 			get
 			{
@@ -18,6 +18,17 @@ namespace Nanny
 				return _Instance;
 			}
 		}
+
+
+		private void SaveObject<T>(object obj){
+			foreach (var prop in obj.GetType().GetProperties()) {
+
+			}
+		}
+
+
+		///DATA BASE FUNCTIONS (PARSE)
+
 	}
 }
 

@@ -1,6 +1,6 @@
 using System;
 
-namespace Nanny
+namespace Nanny.Logic
 {
 	public class NotificationLogic
 	{
@@ -9,7 +9,7 @@ namespace Nanny
 		{
 		}
 		
-		public NotificationLogic Instance 
+		public static NotificationLogic Instance 
 		{
 			get
 			{

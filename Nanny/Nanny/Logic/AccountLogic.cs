@@ -1,6 +1,6 @@
 using System;
 
-namespace Nanny
+namespace Nanny.Logic
 {
 	public class AccountLogic
 	{
@@ -18,6 +18,8 @@ namespace Nanny
 				return _Instance;
 			}
 		}
+
+		//ACCOUNT FUNCTIONS, EXAMPLE LOGIN
 	}
 }
 

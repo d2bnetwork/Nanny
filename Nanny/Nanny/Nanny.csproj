@@ -80,6 +80,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Documents\Parse-1.2.1\Parse.iOS\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Parse.iOS">
+      <HintPath>..\..\..\..\Documents\Parse-1.2.1\Parse.iOS\Parse.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
