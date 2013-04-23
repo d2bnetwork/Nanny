@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="prueba\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -98,6 +99,7 @@
     <Compile Include="FlipsideViewController.designer.cs">
       <DependentUpon>FlipsideViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="prueba\pruebaBLA.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainViewController.xib" />
