@@ -132,3 +132,7 @@ bin
 obj
 
 *.nib
+
+*.exe
+
+*.nib
