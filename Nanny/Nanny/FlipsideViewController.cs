@@ -15,7 +15,12 @@ namespace Nanny
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			
+			Logic.DataLogic.Instance.SaveObject(new DOM.ChildInfo()
+			                                  {
+				ID = 1,
+				Name="Prueba",
+				Parent = new ParentInfo()
+			});
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 		

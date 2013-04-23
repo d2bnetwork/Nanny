@@ -1,10 +1,17 @@
 ﻿<Properties GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Nanny/Logic/DataLogic.cs">
+    <Files>
+      <File FileName="Nanny/Logic/DataLogic.cs" Line="9" Column="20" />
+      <File FileName="Nanny/MainViewController.cs" Line="35" Column="3" />
+      <File FileName="Nanny/Logic/AccountLogic.cs" Line="12" Column="17" />
+      <File FileName="Nanny/Logic/DOM/ChildInfo.cs" Line="29" Column="1" />
+      <File FileName="Nanny/FlipsideViewController.cs" Line="6" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
-          <Node name="Nanny" expanded="True">
+        <State expanded="True">
+          <Node name="Nanny" expanded="True" selected="True">
             <Node name="References" expanded="True" />
             <Node name="Logic" expanded="True">
               <Node name="DOM" expanded="True" />
