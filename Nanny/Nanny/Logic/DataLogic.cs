@@ -24,9 +24,9 @@ namespace Nanny.Logic
 
 
 		public void SaveObject<T>(object obj){
-			var testObject = new ParseObject ("TestObject");
-			testObject ["foo"] = "bar";
-			await testObject.SaveAsync ();
+			//var testObject = new ParseObject ("TestObject");
+			//testObject ["foo"] = "bar";
+			//await testObject.SaveAsync ();
 
 			foreach (var prop in obj.GetType().GetProperties()) {
 
