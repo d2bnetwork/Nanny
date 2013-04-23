@@ -5,7 +5,6 @@ namespace Nanny.Logic
 {
 	public class DataLogic
 	{
-		private string peteco ="";
 		private static DataLogic _Instance;
 		private DataLogic ()
 		{
