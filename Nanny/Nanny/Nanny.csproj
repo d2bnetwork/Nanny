@@ -104,6 +104,7 @@
     <Compile Include="Logic\AccountLogic.cs" />
     <Compile Include="Logic\NannyLogic.cs" />
     <Compile Include="Logic\NotificationLogic.cs" />
+    <Compile Include="Logic\DataLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainViewController.xib" />
