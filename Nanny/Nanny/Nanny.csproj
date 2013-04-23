@@ -105,6 +105,9 @@
     <Compile Include="Logic\NannyLogic.cs" />
     <Compile Include="Logic\NotificationLogic.cs" />
     <Compile Include="Logic\DataLogic.cs" />
+    <Compile Include="Logic\DOM\NannyInfo.cs" />
+    <Compile Include="Logic\DOM\ParentInfo.cs" />
+    <Compile Include="Logic\DOM\ChildInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainViewController.xib" />
