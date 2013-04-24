@@ -12,9 +12,9 @@ namespace Nanny.DOM
 		public string Avatar {get;set;}
 		public string MobileNumber{get;set;}
 
-		public List<ChildInfo> Childrens{get;set;} //Created by Mi
-		public List<ChildInfo> Childrens2{get;set;} //Invited from other User
-		public List<ChildInfo> Childrens23{get;set;} //Nanny
+		public List<ChildInfo> MyChilds{get;set;} //Created by Mi
+		public List<ChildInfo> FamilyChilds{get;set;} //Invited from other User
+		public List<ChildInfo> CareChilds{get;set;} //Nanny
 
 		public UserInfo ()
 		{
