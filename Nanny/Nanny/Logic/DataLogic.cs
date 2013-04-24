@@ -9,7 +9,7 @@ namespace Nanny.Logic
 		private static DataLogic _Instance;
 		private DataLogic ()
 		{
-			ParseClient.Initialize("ic5msCXZIpGFNDWDerRFFEPIZNPshuj9atDxEDXC", "iiLmBAPfDYb25nfNahVzwDpWNc7eEmttmmccuVNh");
+			//ParseClient.Initialize("ic5msCXZIpGFNDWDerRFFEPIZNPshuj9atDxEDXC", "iiLmBAPfDYb25nfNahVzwDpWNc7eEmttmmccuVNh");
 		}
 		
 		public static DataLogic Instance 
@@ -22,13 +22,22 @@ namespace Nanny.Logic
 			}
 		}
 
-		public bool ValidUser (string email, string pass)
+		public UserInfo ValidUser (string email, string pass)
 		{
 			//TODO 
-			return true;
+			return GetUserInfo(email);
 		}
 
-		public ParentInfo AddUser(ParentInfo user)
+		public UserInfo GetUserInfo (string email)
+		{
+			//TODO
+			return new UserInfo(){
+				Name = email,
+				Email = email
+			};
+		}
+
+		public UserInfo AddUser(UserInfo user)
 		{
 			//TODO
 			//throw new NotImplementedException ();

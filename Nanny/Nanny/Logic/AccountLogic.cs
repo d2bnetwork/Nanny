@@ -20,32 +20,45 @@ namespace Nanny.Logic
 			}
 		}
 
+		public bool IsUserLogged{
+			get
+			{
+				return StorageLogic.Instance.Settings.ContainsKey("UserLogin") && StorageLogic.Instance.Settings["UserLogin"]!=null;
+			}
+		}
+
+		UserInfo _CurrentUser = null;
+		public UserInfo CurrentUser
+		{
+			get
+			{
+				if(IsUserLogged && _CurrentUser == null)
+					_CurrentUser = DataLogic.Instance.GetUserInfo(StorageLogic.Instance.Settings["UserLogin"]);
+				return _CurrentUser;
+			}
+		}
+
 		public void LogoutUser(){
-			//TODO
+			StorageLogic.Instance.Settings["UserLogin"] = null;
+			_CurrentUser = null;
 		}
 
 		public bool LoginUser(string email, string pass){
-			//TODO 
-			//ver si no lo tenemos en "session" por email
-			//si esta en session retorno true
-			// si no voy a la base de datos para ver si esta ok
-
-
-
-			if(DataLogic.Instance.ValidUser(email, pass))
+			_CurrentUser = DataLogic.Instance.ValidUser(email, pass);
+			if(_CurrentUser !=null)
 			{
 				//lo guardo en session
+				StorageLogic.Instance.SaveSetting("UserLogin", email);
 				return true;
 			}
 			return false;
-
 		}
 
-		public bool AddUser(ParentInfo user){
+		public bool AddUser(UserInfo user){
 			var newUser = DataLogic.Instance.AddUser(user);
 			if(newUser != null){
-			//TODO Agregar el usuario a session como logueado.
-
+				_CurrentUser = newUser;
+				StorageLogic.Instance.SaveSetting("UserLogin", newUser.Email);
 				return true;
 			}
 			return false;

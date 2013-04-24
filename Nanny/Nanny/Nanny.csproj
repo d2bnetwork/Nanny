@@ -115,8 +115,6 @@
     <Compile Include="Logic\NannyLogic.cs" />
     <Compile Include="Logic\NotificationLogic.cs" />
     <Compile Include="Logic\DataLogic.cs" />
-    <Compile Include="Logic\DOM\NannyInfo.cs" />
-    <Compile Include="Logic\DOM\ParentInfo.cs" />
     <Compile Include="Logic\DOM\ChildInfo.cs" />
     <Compile Include="UI\LoginViewController.cs" />
     <Compile Include="UI\LoginViewController.designer.cs">
@@ -188,6 +186,7 @@
       <DependentUpon>ParentNewViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Logic\StorageLogic.cs" />
+    <Compile Include="Logic\DOM\UserInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainViewController.xib" />

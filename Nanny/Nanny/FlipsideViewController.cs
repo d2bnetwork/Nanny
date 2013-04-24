@@ -20,7 +20,7 @@ namespace Nanny
 			                                  {
 				ID = 1,
 				Name="Prueba",
-				Parent = new ParentInfo()
+				Parent = new UserInfo()
 			});
 			// Perform any additional setup after loading the view, typically from a nib.
 		}

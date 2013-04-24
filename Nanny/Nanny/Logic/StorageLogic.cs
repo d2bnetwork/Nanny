@@ -24,13 +24,15 @@ namespace Nanny
 			}
 		}
 
-		Dictionary<string,string> _Settings = new Dictionary<string, string>();
+		Dictionary<string,string> _Settings;
 
 		public Dictionary<string,string> Settings
 		{
 			get
 			{
-				//TODO cargar desde isolate storage
+				if(_Settings!=null)
+					return _Settings;
+
 				IsolatedStorageFile isoStore= IsolatedStorageFile.GetStore(IsolatedStorageScope.Application, null,null);
 				_Settings = new Dictionary<string, string>();
 				if(isoStore.FileExists(c_SettingsFileName))
@@ -43,7 +45,9 @@ namespace Nanny
 					foreach (var line in fileContent.Split('\n')) 
 					{
 						var values = line.Split(';');
-						//_Settings.Add(values[0], values[]
+						string key = values[0].Replace("#n#", "\n").Replace("#,#", ";");
+						string val = values[1].Replace("#n#", "\n").Replace("#,#", ";");
+						_Settings.Add(key, val);
 					}
 				}
 				return _Settings;
@@ -53,6 +57,14 @@ namespace Nanny
 		void SaveStorageSettings ()
 		{
 			//guardar los settings en storage
+			string fileContent = "";
+			foreach (var item in _Settings) {
+				fileContent += item.Key.Replace("\n", "#n#").Replace(";", "#,#") + ";" +item.Value.Replace("\n", "#n#").Replace(";", "#,#") + "\n";
+			}
+			IsolatedStorageFile isoStore= IsolatedStorageFile.GetStore(IsolatedStorageScope.Application, null,null);
+			StreamWriter writer = new StreamWriter(isoStore.OpenFile(c_SettingsFileName, FileMode.OpenOrCreate));
+			writer.Write(fileContent);
+			writer.Close();
 		}
 
 		public void SaveSetting(string key, string val)
