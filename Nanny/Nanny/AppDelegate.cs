@@ -15,7 +15,8 @@ namespace Nanny
 	{
 		// class-level declarations
 		UIWindow window;
-		MainViewController mainViewController;
+		//MainViewController mainViewController;
+		LoginViewController mainViewController;
 
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
@@ -28,7 +29,8 @@ namespace Nanny
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 			
-			mainViewController = new MainViewController ();
+			//mainViewController = new MainViewController ();
+			mainViewController = new LoginViewController ();
 			window.RootViewController = mainViewController;
 			window.MakeKeyAndVisible ();
 			
