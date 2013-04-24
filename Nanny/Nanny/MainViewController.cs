@@ -45,6 +45,20 @@ namespace Nanny
 			
 			PresentModalViewController (controller, true);
 		}
+
+		partial void showPrueba(NSObject sender)
+		{
+			var controller = new FlipsideViewController () {
+				ModalTransitionStyle = UIModalTransitionStyle.FlipHorizontal,
+			};
+			
+			controller.Done += delegate {
+				DismissModalViewControllerAnimated (true);
+			};
+			
+			PresentModalViewController (controller, true);
+
+		}
 	}
 }
 

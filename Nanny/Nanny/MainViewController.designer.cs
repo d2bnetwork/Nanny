@@ -14,6 +14,9 @@ namespace Nanny
 		[Outlet]
 		MonoTouch.UIKit.UIButton btnClick { get; set; }
 
+		[Action ("showPrueba:")]
+		partial void showPrueba (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("showInfo:")]
 		partial void showInfo (MonoTouch.Foundation.NSObject sender);
 		
