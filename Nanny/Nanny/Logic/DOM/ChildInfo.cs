@@ -10,7 +10,7 @@ namespace Nanny.DOM
 			Boy =0,
 			Girl =1
 		}
-		public int ID {get;set;}
+		public string ID {get;set;}
 		public string Name {get;set;}
 		public string Avatar {get;set;}
 		public E_Gender Gender {get;set;}

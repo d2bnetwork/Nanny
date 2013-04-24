@@ -37,6 +37,13 @@ namespace Nanny.Logic
 			};
 		}
 
+		public void SaveUserInfo (UserInfo user)
+		{
+			//TODO
+		}
+
+
+
 		public UserInfo AddUser(UserInfo user)
 		{
 			//TODO

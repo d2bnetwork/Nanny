@@ -18,7 +18,7 @@ namespace Nanny
 			base.ViewDidLoad ();
 			Logic.DataLogic.Instance.SaveObject(new DOM.ChildInfo()
 			                                  {
-				ID = 1,
+				ID = "1",
 				Name="Prueba",
 				Parent = new UserInfo()
 			});
