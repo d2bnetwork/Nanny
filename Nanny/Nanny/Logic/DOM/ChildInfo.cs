@@ -12,7 +12,6 @@ namespace Nanny.DOM
 		}
 		public int ID {get;set;}
 		public string Name {get;set;}
-		public string LastName {get;set;}
 		public string Avatar {get;set;}
 		public E_Gender Gender {get;set;}
 		public ParentInfo Parent {get;set;}

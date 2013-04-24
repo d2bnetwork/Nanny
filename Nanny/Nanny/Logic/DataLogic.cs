@@ -1,5 +1,6 @@
 using System;
 using Parse;
+using Nanny.DOM;
 
 namespace Nanny.Logic
 {
@@ -21,16 +22,36 @@ namespace Nanny.Logic
 			}
 		}
 
+		public bool ValidUser (string email, string pass)
+		{
+			//TODO 
+			return true;
+		}
+
+		public ParentInfo AddUser(ParentInfo user)
+		{
+			//TODO
+			//throw new NotImplementedException ();
+			return user;
+		}
 
 		public void SaveObject(object item){
 			/*var testObject = new ParseObject ("TestObject");
 			testObject ["foo"] = "bar";
 			testObject.SaveAsync ();*/
 
-			foreach (var prop in item.GetType().GetProperties()) {
+			/*foreach (var prop in item.GetType().GetProperties()) {
 				var val = prop.GetValue(item,null);
-
-			}
+				Console.Write(prop.Name + " - " + val + " - ");
+				if(prop.PropertyType.IsSubclassOf(typeof(System.Collections.ICollection))){
+					Console.WriteLine("IsArray");
+				}
+				else if(prop.PropertyType.Namespace == "Nanny.DOM" && ! prop.PropertyType.IsEnum)
+				{
+					Console.WriteLine("Namespace");
+				}else
+					Console.WriteLine("Valor");
+			}*/
 		}
 
 
