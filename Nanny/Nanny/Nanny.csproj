@@ -86,12 +86,16 @@
     <Reference Include="Parse.iOS">
       <HintPath>bin\Parse.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Logic\" />
     <Folder Include="Logic\DOM\" />
     <Folder Include="UI\" />
+    <Folder Include="UI\Child\" />
+    <Folder Include="UI\Parent\" />
+    <Folder Include="UI\Nanny\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -114,10 +118,96 @@
     <Compile Include="Logic\DOM\NannyInfo.cs" />
     <Compile Include="Logic\DOM\ParentInfo.cs" />
     <Compile Include="Logic\DOM\ChildInfo.cs" />
+    <Compile Include="UI\LoginViewController.cs" />
+    <Compile Include="UI\LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Child\ChildDetailsViewController.cs" />
+    <Compile Include="UI\Child\ChildDetailsViewController.designer.cs">
+      <DependentUpon>ChildDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Child\ChildHomeViewController.cs" />
+    <Compile Include="UI\Child\ChildHomeViewController.designer.cs">
+      <DependentUpon>ChildHomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Child\ChildListViewController.cs" />
+    <Compile Include="UI\Child\ChildListViewController.designer.cs">
+      <DependentUpon>ChildListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Child\ChildNanniesViewController.cs" />
+    <Compile Include="UI\Child\ChildNanniesViewController.designer.cs">
+      <DependentUpon>ChildNanniesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Child\ChildNewViewController.cs" />
+    <Compile Include="UI\Child\ChildNewViewController.designer.cs">
+      <DependentUpon>ChildNewViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Nanny\NannyCheckListDiapersViewController.cs" />
+    <Compile Include="UI\Nanny\NannyCheckListDiapersViewController.designer.cs">
+      <DependentUpon>NannyCheckListDiapersViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Nanny\NannyCheckListEatViewController.cs" />
+    <Compile Include="UI\Nanny\NannyCheckListEatViewController.designer.cs">
+      <DependentUpon>NannyCheckListEatViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Nanny\NannyCheckListViewController.cs" />
+    <Compile Include="UI\Nanny\NannyCheckListViewController.designer.cs">
+      <DependentUpon>NannyCheckListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Nanny\NannyDashboardViewController.cs" />
+    <Compile Include="UI\Nanny\NannyDashboardViewController.designer.cs">
+      <DependentUpon>NannyDashboardViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Nanny\NannyDetailsViewController.cs" />
+    <Compile Include="UI\Nanny\NannyDetailsViewController.designer.cs">
+      <DependentUpon>NannyDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Nanny\NannyListViewController.cs" />
+    <Compile Include="UI\Nanny\NannyNewViewController.cs" />
+    <Compile Include="UI\Nanny\NannyNewViewController.designer.cs">
+      <DependentUpon>NannyNewViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Nanny\NnanyCheckListSleepViewController.cs" />
+    <Compile Include="UI\Nanny\NnanyCheckListSleepViewController.designer.cs">
+      <DependentUpon>NnanyCheckListSleepViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Parent\ParentDetailsViewController.cs" />
+    <Compile Include="UI\Parent\ParentDetailsViewController.designer.cs">
+      <DependentUpon>ParentDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Parent\ParentHomeViewController.cs" />
+    <Compile Include="UI\Parent\ParentHomeViewController.designer.cs">
+      <DependentUpon>ParentHomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Parent\ParentListViewController.cs" />
+    <Compile Include="UI\Parent\ParentListViewController.designer.cs">
+      <DependentUpon>ParentListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Parent\ParentNewViewController.cs" />
+    <Compile Include="UI\Parent\ParentNewViewController.designer.cs">
+      <DependentUpon>ParentNewViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainViewController.xib" />
     <InterfaceDefinition Include="FlipsideViewController.xib" />
+    <InterfaceDefinition Include="UI\LoginViewController.xib" />
+    <InterfaceDefinition Include="UI\Child\ChildDetailsViewController.xib" />
+    <InterfaceDefinition Include="UI\Child\ChildHomeViewController.xib" />
+    <InterfaceDefinition Include="UI\Child\ChildListViewController.xib" />
+    <InterfaceDefinition Include="UI\Child\ChildNanniesViewController.xib" />
+    <InterfaceDefinition Include="UI\Child\ChildNewViewController.xib" />
+    <InterfaceDefinition Include="UI\Nanny\NannyCheckListDiapersViewController.xib" />
+    <InterfaceDefinition Include="UI\Nanny\NannyCheckListEatViewController.xib" />
+    <InterfaceDefinition Include="UI\Nanny\NannyCheckListViewController.xib" />
+    <InterfaceDefinition Include="UI\Nanny\NannyDashboardViewController.xib" />
+    <InterfaceDefinition Include="UI\Nanny\NannyDetailsViewController.xib" />
+    <InterfaceDefinition Include="UI\Nanny\NannyNewViewController.xib" />
+    <InterfaceDefinition Include="UI\Nanny\NnanyCheckListSleepViewController.xib" />
+    <InterfaceDefinition Include="UI\Parent\ParentDetailsViewController.xib" />
+    <InterfaceDefinition Include="UI\Parent\ParentHomeViewController.xib" />
+    <InterfaceDefinition Include="UI\Parent\ParentListViewController.xib" />
+    <InterfaceDefinition Include="UI\Parent\ParentNewViewController.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
